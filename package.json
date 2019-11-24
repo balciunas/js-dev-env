@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node buildScripts/srcServer.js"
+    "start": "npm-run-all open:src",
+    "open:src" : "node buildScripts/srcServer.js"
   },
   "author": "GB",
   "license": "MIT",
