@@ -2,7 +2,9 @@
   "name": "javascript-development-environment",
   "version": "1.0.0",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "start": "node buildScripts/srcServer.js"
+  },
   "author": "GB",
   "license": "MIT",
   "dependencies": {
