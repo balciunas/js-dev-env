@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "prestart": "node buildScripts/startMessage.js",
+    "prestart": "babel-node buildScripts/startMessage.js",
     "start": "npm-run-all open:src",
-    "open:src" : "node buildScripts/srcServer.js"
+    "open:src" : "babel-node buildScripts/srcServer.js"
   },
   "author": "GB",
   "license": "MIT",
