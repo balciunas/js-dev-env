@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "lint": "esw webpack.config.*, src, buildScripts --color",
+    "lint:watch": "npm run lint -- --watch",
     "prestart": "babel-node buildScripts/startMessage.js",
-    "start": "npm-run-all open:src",
+    "start": "npm-run-all open:src lint:watch",
     "open:src" : "babel-node buildScripts/srcServer.js"
   },
   "author": "GB",
