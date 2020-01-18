@@ -18,7 +18,7 @@ export default {
     filename: '[name].[chunkhash].js'
   },
   plugins: [
-    // Hash the file usind md5, for cache busting
+    // Hash the file using md5, for cache busting
     new WebpackMd5Hash(),
 
     //Use CommonsChunkPlugin to create a separate bundle
